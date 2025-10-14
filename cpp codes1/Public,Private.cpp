@@ -3,10 +3,10 @@ using namespace std;
 
 class Student {
 private:
-    int rollNumber;    // Private member — cannot be accessed directly outside the class
+    int rollNumber;    // Private member â€” cannot be accessed directly outside the class
 
 public:
-    string name;       // Public member — can be accessed directly
+    string name;       // Public member â€” can be accessed directly
 
     // Function to set private data (accessible because it's inside the class)
     void setRollNumber(int r) {
@@ -26,10 +26,10 @@ int main() {
     // Accessing public member directly
     s1.name = "Rahul";
 
-    // Accessing private member directly — ? Not allowed!
+    // Accessing private member directly â€” ? Not allowed!
     // s1.rollNumber = 101;   // This would cause a compile-time error
 
-    // Accessing private member through a public function — ? Allowed
+    // Accessing private member through a public function â€” ? Allowed
     s1.setRollNumber(101);
 
     s1.displayInfo();
